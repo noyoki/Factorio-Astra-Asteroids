@@ -1,6 +1,6 @@
 data:extend ({
 	{	
-		name = "include-oil-asteroid",
+		name = "include-crude-asteroid",
 		setting_type = "startup",
 		type = "bool-setting",
 		default_value = true,
