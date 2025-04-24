@@ -25,7 +25,7 @@ if settings.startup["include-crude-asteroid"].value == true then
             type = "asteroid-chunk"
         },
         {
-            asteroid = "nauvis-asteroid-chunk",
+            asteroid = "nauvis_asteroid_chunk",
             probability = 0.05,
             speed = 0.05,
             angle_when_stopped = 0.25,
@@ -65,7 +65,7 @@ else
             type = "asteroid-chunk"
         },
         {
-            asteroid = "nauvis-asteroid-chunk",
+            asteroid = "nauvis_asteroid_chunk",
             probability = 0.05,
             speed = 0.05,
             angle_when_stopped = 0.25,
