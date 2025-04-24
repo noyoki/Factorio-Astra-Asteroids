@@ -30,8 +30,7 @@ crude_asteroid_chunk_crushing.localised_name = { "recipe-name.crude_asteroid_chu
 crude_asteroid_chunk_crushing.icon = "__Astra-Asteroids__/graphics/crude-asteroid-chunk-crushing.png"
 crude_asteroid_chunk_crushing.order = "f"
 crude_asteroid_chunk_crushing.enabled = false
-crude_asteroid_chunk_crushing.ingredients ={
-{ type = "item", name = "crude_asteroid_chunk_item", amount = 1 }}
+crude_asteroid_chunk_crushing.ingredients = { { type = "item", name = "crude_asteroid_chunk_item", amount = 1 } }
 crude_asteroid_chunk_crushing.results =
 {
     { type = "item", name = "solid-fuel", amount_min = 5, amount_max = 15 },
