@@ -1,0 +1,9 @@
+{
+    "name": "AstraAsteroids",
+    "version": "0.1.0",
+	"factorio_version": "2.0",
+	"title": "Astra Asteroids",
+    "author": "Aleoin",
+    "dependencies": ["base >= 2.0.28", "space-age >= 2.0.28"],
+    "description": "Adds asteroids for each planets resources.  Intended for space platform-only gameplay."
+}
