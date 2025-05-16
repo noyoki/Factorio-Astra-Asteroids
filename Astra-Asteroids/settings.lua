@@ -1,3 +1,8 @@
+if mods["any-planet-start"] then
+    APS.add_choice("shattered-tanker")
+end
+
+
 data:extend ({
 	{	
 		name = "include-crude-asteroid",

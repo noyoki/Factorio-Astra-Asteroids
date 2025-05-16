@@ -1,10 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2025.03.02
+  Features:
+    - ?
   Bugfixes:
     - ?
-  Changes:
-    - Added planetary asteroids.
     - ... PROFIT.
-  New Features:
+  Balancing:
     - Initial release
