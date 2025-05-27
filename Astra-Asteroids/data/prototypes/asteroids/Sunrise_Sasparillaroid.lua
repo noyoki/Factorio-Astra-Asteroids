@@ -42,7 +42,7 @@ table.insert(data.raw["technology"]["uranium-processing"].effects, {type = "unlo
 
 local nauvis_chunk_item = {
     type = "item",
-    name = "Sunrise Sasparillaroid Chunk",
+    name = "Sunrise_Sasparillaroid_Chunk_Item",
     subgroup = "space-material",
     order = "s",
     icon = "__Astra-Asteroids__/graphics/nauvis-asteroid-chunk.png",
@@ -51,14 +51,18 @@ local nauvis_chunk_item = {
 
 local nauvis_chunk = {
     type = "asteroid-chunk",
-    name = "Sunrise Sasparillaroid Chunk",
+    name = "Sunrise_Sasparillaroid_Chunk",
     subgroup = "space-material",
     order = "s",
     icon = "__Astra-Asteroids__/graphics/nauvis-asteroid-chunk.png",
-    mineable_properties = {
+    mineable = {
+        mining_time = 0.2,
         mineable = true,
-        result = "nauvis_chunk_item"
+        results = { {name = "Sunrise_Sasparillaroid_Chunk_Item", amount = 1} }
     }
 }
+
+
+
 
 data:extend({nauvis_chunk_item, nauvis_chunk})

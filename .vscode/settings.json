@@ -1,0 +1,5 @@
+{
+    "Lua.diagnostics.globals": [
+        "nauvis_chunk_item"
+    ]
+}
