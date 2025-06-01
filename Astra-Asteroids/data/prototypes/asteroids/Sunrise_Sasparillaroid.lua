@@ -55,10 +55,10 @@ local nauvis_chunk = {
     subgroup = "space-material",
     order = "s",
     icon = "__Astra-Asteroids__/graphics/nauvis-asteroid-chunk.png",
-    mineable = {
-        mining_time = 0.2,
-        mineable = true,
-        results = { {name = "Sunrise_Sasparillaroid_Chunk_Item", amount = 1} }
+    minable = {
+      mining_particle = "carbonic-asteroid-chunk-particle-medium",
+      mining_time = 0.2,
+      result = "Sunrise_Sasparillaroid_Chunk_Item"
     }
 }
 
