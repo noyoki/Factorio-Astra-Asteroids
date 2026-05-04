@@ -40,6 +40,23 @@ data:extend({nauvis_asteroid_chunk, nauvis_asteroid_chunk_item, nauvis_asteroid_
 table.insert(data.raw["technology"]["space-platform"].effects, {type = "unlock-recipe", recipe = "nauvis_asteroid_chunk_crushing"})
 table.insert(data.raw["technology"]["uranium-processing"].effects, {type = "unlock-recipe", recipe = "nauvis_asteroid_chunk_crushing_adv"})
 
+local nauvis_crushing_recipe = {
+    name = "astra-nauvis-asteroid-crushing",
+    type = "recipe",
+    subgroup = "space-crushing",
+    category = "crushing",
+    --order = "s",
+    enabled = false,
+    icon = "__Astra-Asteroids__/graphics/nauvis-asteroid-chunk-crushing.png",
+    energy_required = 2,
+    ingredients = {
+        { type = "item", name = "nauvis_asteroid_chunk_item", amount = 1 }
+    },
+    products = {
+        { type = "item", name = "stone", amount = 0, probability = 1 }
+    },
+}
+
 local nauvis_chunk_item = {
     type = "item",
     name = "Sunrise_Sasparillaroid_Chunk_Item",
