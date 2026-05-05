@@ -1,5 +1,12 @@
-local planet = data.raw.planet["nauvis"]
 
+
+
+local planet = data.raw.planet["nauvis"]
+local defs = AstraAsteroids.GetCombinationsForPlanet("nauvis")
+planet.asteroid_spawn_definitions = defs
+
+
+--[[
 if settings.startup["include-crude-asteroid"].value == true then
 
     planet.asteroid_spawn_definitions = {
@@ -74,3 +81,5 @@ else
     }
 
 end
+
+]]

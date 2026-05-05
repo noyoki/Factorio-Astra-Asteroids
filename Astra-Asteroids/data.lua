@@ -1,5 +1,7 @@
-require("data.prototypes.asteroids.Crude_Asteroid")
-require("data.prototypes.asteroids.Sunrise_Sasparillaroid")
-require("data.prototypes.asteroids.stone_processing")
-require("data.prototypes.planets.nauvis")
+require("scripts.Utils")
+
+require("data.prototypes.asteroids.Asteroid_Prototypes")
+require("data.prototypes.asteroids.Asteroid_Recipes")
 require("data.prototypes.asteroids.Tech")
+require("data.prototypes.planets.nauvis")
+

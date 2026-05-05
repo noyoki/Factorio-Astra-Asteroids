@@ -1,7 +1,7 @@
 
 data:extend ({
 	{	
-		name = "include-crude-asteroid",
+		name = "astra-include-crude-asteroid",
 		setting_type = "startup",
 		type = "bool-setting",
 		default_value = true,

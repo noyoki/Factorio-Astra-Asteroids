@@ -23,7 +23,12 @@ oilstone_processing.results ={{type="fluid", name="crude-oil", amount=100}}
 oilstone_processing.allow_productivty = false
 
 
-if settings.startup["include-crude-asteroid"].value == true then
+if settings.startup["astra-include-crude-asteroid"].value == true then
 table.insert(data.raw["technology"]["space-platform"].effects, {type = "unlock-recipe", recipe = "astra-oilstone-processing"})
 data:extend({oilstone,oilstone_processing})
 end
+
+
+
+
+
