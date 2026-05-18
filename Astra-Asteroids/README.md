@@ -5,7 +5,8 @@ Astra Asteroids adds a new asteroids and recipes to the game. This mod is primar
 
 ## Features
 
-- Adds a new asteroid for every planet, with that planets key resource from it - with basic and advanced versions of each. 
+- Adds a new asteroid for every planet, with that planets key resource from it - with basic and advanced(or alternative?) versions of each. 
 - Adds an optional, setting-based crude oil asteroid for Nauvis. 
+- Increases asteroid quantity - approximately 5x medium asteroids, and 8x total chunks.
 
 

@@ -5,9 +5,9 @@
 	"title": "Astra Asteroids",
     "author": "Aleoin,Noyoki",
     "contact": "Discord@princess_noyoki",
-    "homepage":"https://github.com/noyoki/Factorio-Astra-Explorer",
+    "homepage":"https://github.com/noyoki/Factorio-Astra-Asteroids",
     "dependencies": ["base >= 2.0.28", "space-age >= 2.0.28"],
-    "description": "Adds asteroids for each planets resources.  Intended for space platform-only gameplay."
+    "description": "Adds asteroids for each planets resources.  Intended for space platform-focused gameplay."
 }
 
 

@@ -1,85 +1,44 @@
 
 
 
-local planet = data.raw.planet["nauvis"]
-local defs = AstraAsteroids.GetCombinationsForPlanet("nauvis")
-planet.asteroid_spawn_definitions = defs
+local n = data.raw.planet["nauvis"]
+n.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForPlanet("nauvis")
 
+local nv = data.raw["space-connection"]["nauvis-vulcanus"]
+nv.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("nauvis","vulcanus")
 
---[[
-if settings.startup["include-crude-asteroid"].value == true then
+local ng = data.raw["space-connection"]["nauvis-gleba"]
+ng.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("nauvis","gleba")
 
-    planet.asteroid_spawn_definitions = {
-        {
-            asteroid = "metallic-asteroid-chunk",
-            probability = 0.2,
-            speed = 0.1,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "carbonic-asteroid-chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "oxide-asteroid-chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "nauvis_asteroid_chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "crude_asteroid_chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        }
-    }
+local nf = data.raw["space-connection"]["nauvis-fulgora"]
+nf.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("nauvis","fulgora")
 
-else
+local v = data.raw.planet["vulcanus"]
+v.asteroid_spawn_definitions =AstraAsteroids.GetCombinationsForPlanet("vulcanus")
 
-    planet.asteroid_spawn_definitions = {
-        {
-            asteroid = "metallic-asteroid-chunk",
-            probability = 0.2,
-            speed = 0.1,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "carbonic-asteroid-chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "oxide-asteroid-chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        },
-        {
-            asteroid = "nauvis_asteroid_chunk",
-            probability = 0.1,
-            speed = 0.05,
-            angle_when_stopped = 0.25,
-            type = "asteroid-chunk"
-        }
-    }
+local vg = data.raw["space-connection"]["vulcanus-gleba"]
+vg.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("vulcanus","gleba")
 
-end
+local g = data.raw.planet["gleba"]
+g.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForPlanet("gleba")
 
-]]
+local gf =  data.raw["space-connection"]["gleba-fulgora"]
+gf.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("gleba","fulgora")
+
+local ga =  data.raw["space-connection"]["gleba-aquilo"]
+ga.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("gleba","aquilo")
+
+local f = data.raw.planet["fulgora"]
+f.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForPlanet("fulgora")
+
+local fa =  data.raw["space-connection"]["fulgora-aquilo"]
+fa.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("fulgora","aquilo")
+
+local a = data.raw.planet["aquilo"]
+a.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForPlanet("aquilo")
+
+local ae =  data.raw["space-connection"]["aquilo-solar-system-edge"]
+ae.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForSpaceRoute("aquilo","system_edge")
+
+local sse = data.raw["space-location"]["solar-system-edge"]
+sse.asteroid_spawn_definitions = AstraAsteroids.GetCombinationsForPlanet("system_edge")
