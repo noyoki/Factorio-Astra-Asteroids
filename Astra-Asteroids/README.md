@@ -21,4 +21,4 @@ All items/recipes/etc added in this mod are given prefixed names that shouldn't 
 - Balancing in progress
 
 ## Contact
-Find a bug?  Have comments of critiques? 
+Find a bug?  Have comments or critiques? You can start a discussion here(preferred) or open a github issue.  
