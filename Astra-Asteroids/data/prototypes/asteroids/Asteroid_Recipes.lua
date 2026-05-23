@@ -48,8 +48,7 @@ fulgoran_asteroid_chunk_crushing.enabled = false
 fulgoran_asteroid_chunk_crushing.energy_required = 2
 fulgoran_asteroid_chunk_crushing.ingredients = { { type = "item", name = "astra-fulgoran-asteroid-chunk", amount = 1 } }
 fulgoran_asteroid_chunk_crushing.results = { 
-    { type = "item", name = "stone", amount = 5,  probability = 1 }, 
-    { type = "item", name = "scrap", amount_min = 5, amount_max = 15, probability = 1 }, 
+    { type = "item", name = "scrap", amount_min = 5, amount_max = 10, probability = 1 }, 
     { type = "item", name = "astra-fulgoran-asteroid-chunk", amount_min = 1, amount_max = 1, probability = 0.2 } 
 }
 
@@ -134,8 +133,8 @@ fulgoran_asteroid_chunk_crushing_adv.enabled = false
 fulgoran_asteroid_chunk_crushing_adv.energy_required = 5
 fulgoran_asteroid_chunk_crushing_adv.ingredients = { { type = "item", name = "astra-fulgoran-asteroid-chunk", amount = 1 } }
 fulgoran_asteroid_chunk_crushing_adv.results = { 
-    { type = "item", name = "scrap", amount_min = 30, amount_max = 50, probability = 1 }, 
-    { type = "item", name = "holmium-ore", amount_min = 3, amount_max = 4, probability = 0.5 }, 
+    { type = "item", name = "scrap", amount_min = 10, amount_max = 15, probability = 1 }, 
+    { type = "item", name = "holmium-ore", amount_min = 1, amount_max = 2, probability = 0.54 }, 
     { type = "item", name = "astra-fulgoran-asteroid-chunk", amount_min = 1, amount_max = 1, probability = 0.05 } 
 }
 
@@ -202,7 +201,7 @@ table.insert(data.raw["technology"]["asteroid-productivity"].effects,aqui1)
 
 
 
-local crude_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processing"])
+local crude_repro = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 crude_repro.name = "astra-crude-asteroid-processing"
 crude_repro.icon = "__Astra-Asteroids__/graphics/crude_crushing_basic.png"
 crude_repro.localised_name = {"recipe-name.astra-crude-asteroid-processing"}
@@ -218,7 +217,7 @@ crude_repro.results = {
 }
 
     
-local radio_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processindg"])
+local radio_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 radio_repro.name = "astra-nauvis-asteroid-processing"
 radio_repro.icon = "__Astra-Asteroids__/graphics/nauvis_asteroid_reroll.png"
 radio_repro.localised_name = {"recipe-name.astra-nauvis-asteroid-processing"}
@@ -233,7 +232,7 @@ radio_repro.results = {
     { type = "item", name = "carbonic-asteroid-chunk", amount= 1, probability = .2 }  
 }
     
-local volca_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processindg"])
+local volca_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 volca_repro.name = "astra-volcanic-asteroid-processing"
 volca_repro.icon = "__Astra-Asteroids__/graphics/vulcanus_asteroid_reroll.png"
 volca_repro.localised_name = {"recipe-name.astra-volcanic-asteroid-processing"}
@@ -248,7 +247,7 @@ volca_repro.results = {
     { type = "item", name = "carbonic-asteroid-chunk", amount= 1, probability = .2 }  
 }
     
-local fulga_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processindg"])
+local fulga_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 fulga_repro.name = "astra-fulgoran-asteroid-processing"
 fulga_repro.icon = "__Astra-Asteroids__/graphics/fulgoran_asteroid_reroll.png"
 fulga_repro.localised_name = {"recipe-name.astra-fulgoran-asteroid-processing"}
@@ -263,7 +262,7 @@ fulga_repro.results = {
     { type = "item", name = "carbonic-asteroid-chunk", amount= 1, probability = .2 }  
 }
 
-local fulga_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processindg"])
+local fulga_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 fulga_repro.name = "astra-fulgoran-asteroid-processing"
 fulga_repro.icon = "__Astra-Asteroids__/graphics/fulgoran_asteroid_reroll.png"
 fulga_repro.localised_name = {"recipe-name.astra-fulgoran-asteroid-processing"}
@@ -278,7 +277,7 @@ fulga_repro.results = {
     { type = "item", name = "carbonic-asteroid-chunk", amount= 1, probability = .2 }  
 }
 
-local gleba_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processindg"])
+local gleba_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 gleba_repro.name = "astra-gleba-asteroid-processing"
 gleba_repro.icon = "__Astra-Asteroids__/graphics/gleba_asteroid_reroll.png"
 gleba_repro.localised_name = {"recipe-name.astra-gleba-asteroid-processing"}
@@ -293,9 +292,9 @@ gleba_repro.results = {
     { type = "item", name = "carbonic-asteroid-chunk", amount= 1, probability = .2 }  
 }
 
-local aquil_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-processindg"])
+local aquil_repro  = table.deepcopy(data.raw.recipe["metallic-asteroid-reprocessing"])
 aquil_repro.name = "astra-aquilo-asteroid-processing"
-aquil_repro.icon = "__Astra-Asteroids__/graphics/crude_asteroid_crushing.png"
+aquil_repro.icon = "__Astra-Asteroids__/graphics/crude_crushing_basic.png"
 aquil_repro.localised_name = {"recipe-name.astra-aquilo-asteroid-processing"}
 aquil_repro.allow_productivty = false
 aquil_repro.order = "b-b-j"
@@ -310,7 +309,7 @@ aquil_repro.results = {
 
 
 if settings.startup["astra-include-crude-asteroid"].value == true then
-enddata:extend({crude_repro})
+data:extend({crude_repro})
 table.insert(data.raw["technology"]["asteroid-reprocessing"].effects, {type = "unlock-recipe", recipe = "astra-crude-asteroid-processing"})
 end
 

@@ -20,7 +20,7 @@ oilstone_processing.name = "astra-oilstone-processing"
 oilstone_processing.icons = {{icon = "__base__/graphics/icons/solid-fuel.png", tint = {0,0,0,1} }}
 oilstone_processing.enabled = false
 oilstone_processing.ingredients ={{ type = "item", name = "astra-oilstone", amount = 1 }}
-oilstone_processing.results ={{type="fluid", name="crude-oil", amount=100}}
+oilstone_processing.results ={{type="fluid", name="crude-oil", amount=30}}
 oilstone_processing.allow_productivty = true
 
 
