@@ -20,7 +20,7 @@ oilstone_processing.name = "astra-oilstone-processing"
 oilstone_processing.icons = {{icon = "__base__/graphics/icons/solid-fuel.png", tint = {0,0,0,1} }}
 oilstone_processing.enabled = false
 oilstone_processing.ingredients ={{ type = "item", name = "astra-oilstone", amount = 1 }}
-oilstone_processing.results ={{type="fluid", name="crude-oil", amount=30}}
+oilstone_processing.results ={{type="fluid", name="crude-oil", amount=50}}
 oilstone_processing.allow_productivty = true
 
 
@@ -37,7 +37,7 @@ egg_search_pentapods.subgroup = "space-crushing"
 egg_search_pentapods.order = "j[gleba].c[special]"
 egg_search_pentapods.ingredients ={{ type = "item", name = "astra-gleba-asteroid-chunk", amount = 1 }, {type="fluid",name="water",amount=100}}
 egg_search_pentapods.results ={{type="item", name="pentapod-egg", amount=1, probability=.5}}
-egg_search_pentapods.allow_productivty = true
+egg_search_pentapods.allow_productivty = false
 
 
 local egg_search_biter = table.deepcopy(data.raw.recipe["plastic-bar"])
@@ -48,7 +48,7 @@ egg_search_biter.subgroup = "space-crushing"
 egg_search_biter.order = "h[nauvis].c[special]"
 egg_search_biter.ingredients ={{ type = "item", name = "astra-nauvis-asteroid-chunk", amount = 1 }, {type="fluid",name="water",amount=100}}
 egg_search_biter.results ={{type="item", name="biter-egg", amount=1, probability=.5}}
-egg_search_biter.allow_productivty = true
+egg_search_biter.allow_productivty = false
 data:extend({egg_search_pentapods,egg_search_biter})
 
 table.insert(data.raw["technology"]["advanced-asteroid-processing"].effects, {type = "unlock-recipe", recipe = "astra-biter-egg-search"})
