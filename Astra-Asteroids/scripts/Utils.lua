@@ -204,7 +204,6 @@ AstraAsteroids.GenerateAsteroidSpawnDefinitions = function(ratios, sizes)
             end
         
             if (actual_ratio) >0 then
-                log(asteroid_name..actual_ratio)
                 actual_ratio = actual_ratio * overall_asteroid_spawning_multiplier
                 local asteroiddef = {asteroid = asteroid_name, probability = actual_ratio, type = typename, speed = stardardspeed, angle_when_stopped = angle}
                 table.insert(rocks, asteroiddef)
